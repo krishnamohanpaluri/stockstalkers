@@ -22,16 +22,9 @@ $(function () {
 /*=====================================================
     ---- Carousel ----
 =====================================================*/
-$("#home-carousel").owlCarousel({
-  items: 1,
-  autoplay: true,
-  smartSpeed: 800,
-  loop: true,
-  autoplaySpeed: 900,
-});
+
 $(function () {
   $(".team-members").owlCarousel({
-    items: 3,
     autoplay: true,
     smartSpeed: 800,
     loop: true,
@@ -48,11 +41,7 @@ $(function () {
       },
       // breakpoint from 768 up
       768: {
-        items: 2,
-      },
-      // breakpoint from 768 up
-      991: {
-        items: 3,
+        items: 1,
       },
     },
   });
@@ -118,10 +107,10 @@ $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() < 50) {
       $("nav").removeClass("vesco-top-nav");
-      $(".back-to-top").fadeOut();
+      $("#back-to-top").fadeOut();
     } else {
       $("nav").addClass("vesco-top-nav");
-      $(".back-to-top").fadeIn();
+      $("#back-to-top").fadeIn();
     }
   });
 });
@@ -150,31 +139,3 @@ $(function () {
     $(".navbar-toggle").click();
   });
 });
-
-// Form Validation
-
-function formvalidation() {
-  var name = document.forms["ContactUsForm"]["fullname"];
-  var email = document.forms["ContactUsForm"]["email"];
-  var message = document.forms["ContactUsForm"]["message"];
-
-  if (name.value == "") {
-    window.alert("Please enter your name.");
-    name.focus();
-    return false;
-  }
-
-  if (email.value == "") {
-    window.alert("Please enter a valid e-mail address.");
-    email.focus();
-    return false;
-  }
-
-  if (message.value == "") {
-    window.alert("Please enter your message.");
-    email.focus();
-    return false;
-  }
-
-  return true;
-}

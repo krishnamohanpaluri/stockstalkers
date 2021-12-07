@@ -1,69 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags-->
+    <!-- Character Encoding (Tells browser which character set to use. HTML5 default uft-8) -->
     <meta charset="utf-8" />
 
+    <!-- SEO -->
     <meta
       name="description"
-      content="New Delhi based Stock Advisors who provides Advices/tips on stock marketing and also maintains stock portfolio's."
+      content="Stock Marketing and Investments Planner"
     />
-    <meta name="keywords" content="Stock Marketing, Stock Portfolio's" />
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, Bootstrap, jQuery, Responsive Design"
+    />
+    <!-- Enables the website to work properly with Internet Explorer Latest Version(Edge)-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- This meta tag is for responsiveness. Takes the width as the width of the device-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>StockStalker</title>
+    <!-- Title -->
+    <title>Stock Stalker</title>
+    <!-- Fav Icon -->
+    <!--<link rel="shortcut-icon" href="img/favicon.ico"> -->
+    <link rel="icon" href="img/favicon.ico" />
 
-    <!-- <link rel="icon" href="img/favicon.png" /> -->
-
+    <!-- Font from Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Font-Awesome (Icons)-->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
 
+    <!-- Magnific-popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css" />
 
+    <!-- Animation CSS -->
     <link rel="stylesheet" href="css/animate/animate.css" />
 
+    <!-- Owl-Carousel -->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css" />
 
+    <!-- Linking CSS file-->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Responsive CSS file-->
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
 
   <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
-    <header>
-      <div class="container">
+    <!-- BOOTSTRAP GRID SYSTEM EXAMPLES -->
+    <!------------------------------------
+    <h3>Column 1</h3>
+    <div class="container">
         <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="header-title">
-              <a
-        href="#home"
-        class="text-center"
-        title="home"
-        role="button"
-        >STOCK STALKER</i
-      ></a>
+            <div class="col-md-12 col-1">
+                Column 1
+            </div>
+        </div>
+    </div>
+    
+    <h3>Column 2</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-1">
+                Column 2a
+            </div>
+            <div class="col-md-6 col-2">
+                Column 2b
+            </div>
+        </div>
+    </div>
+    
+    <h3>Column 3</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-1">
+                Column 3a
+            </div>
+            <div class="col-md-4 col-2">
+                Column 3b
+            </div>
+            <div class="col-md-4 col-3">
+                Column 3c
+            </div>
+        </div>
+    </div>
+    
+    <h3>Column 4</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-1">
+                Column 4a
+            </div>
+            <div class="col-md-3 col-2">
+                Column 4b
+            </div>
+            <div class="col-md-3 col-3">
+                Column 4c
+            </div>
+            <div class="col-md-3 col-4">
+                Column 4d
+            </div>
+        </div>
+    </div>
+    
+    ==========================================================================
+    ==========================================================================
+    ---- USING ICONS FROM FONT-AWESOME ----
+
+    <i class="fa fa-laptop fa-5x"></i>
+    ==========================================================================
+    -->
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="vesco-nav-wrapper">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#vesco-menu"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#home"><p>Stock Stalker</p></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="vesco-menu">
+              <ul class="nav navbar-nav">
+                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                <li><a class="smooth-scroll" href="#about">About Us</a></li>
+                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                <li><a class="smooth-scroll" href="#team">Our Team</a></li>
+                <li><a class="smooth-scroll" href="#why_us">Why us</a></li>
+                <li>
+                  <a class="smooth-scroll" href="#testimonials"
+                    >Client Testimonial</a
+                  >
+                </li>
+                <li><a class="smooth-scroll" href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+      <div id="home-cover" class="bg-parallax animated fadeIn">
+        <div id="home-content-box">
+          <div id="home-content-box-inner" class="text-center">
+            <div id="home-heading" class="animated zoomIn">
+              <h3>India's Most Trusted</h3>
+              <h4>Stocks and Profile Research Platform</h4>
             </div>
           </div>
         </div>
       </div>
-  </header>
-
-    <section id="home">
-      <div id="home-carousel" class="owl-carousel owl-theme">
-        <div class="item"><img src="img/home/1.jpg" alt="image_1" /></div>
-        <div class="item"><img src="img/home/2.jpg" alt="image_2" /></div>
-        <div class="item"><img src="img/home/3.jpg" alt="image_3" /></div>
-      </div>
     </section>
 
+    <!-- Services -->
+    <!-- <section id="services">
+      <div class="content-box">
+        <div
+          class="content-title wow animated fadeInDown"
+          data-wow-duration="1s"
+          data-wow-delay="0s"
+        >
+          <h3>Services</h3>
+          <div class="content-title-underline"></div>
+        </div>
+
+        <div
+          class="container wow animated fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0s"
+        >
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="fa fa-paint-brush fa-3x"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>Web Design</h3>
+                </div>
+                <div class="service-item-descp">
+                  <p>Ne illum non nulla. labore Tamen laboris</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="fa fa-laptop fa-3x"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>Web Development</h3>
+                </div>
+                <div class="service-item-descp">
+                  <p>Ne illum non nulla. labore Tamen laboris</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="fa fa-tablet fa-3x"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>Mobile Apps</h3>
+                </div>
+                <div class="service-item-descp">
+                  <p>Ne illum non nulla. labore Tamen laboris.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="fa fa-search fa-3x"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>SEO Optimization</h3>
+                </div>
+                <div class="service-item-descp">
+                  <p>Excepteur a incurreret, aute senserit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="fa fa-pencil-square-o fa-3x"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>UX Design</h3>
+                </div>
+                <div class="service-item-descp">
+                  <p>Excepteur a incurreret, aute senserit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service-item">
+                <div class="service-item-icon">
+                  <i class="fa fa-life-ring fa-3x"></i>
+                </div>
+                <div class="service-item-title">
+                  <h3>Support</h3>
+                </div>
+                <div class="service-item-descp">
+                  <p>Excepteur a incurreret, aute senserit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- About -->
     <section id="about">
       <div class="container">
         <div class="row">
@@ -76,16 +292,34 @@
                     data-wow-duration="1s"
                     data-wow-delay="0s"
                   >
-                    <h3>Know about <span>Stock Stalker</span></h3>
+                    <h3>About us</h3>
                   </div>
 
                   <div
-                    class="about-descp wow animated fadeInDown"
+                    class="about-descp wow animated fadeInLeft"
                     data-wow-duration="1s"
                     data-wow-delay="0s"
                   >
                     <p>
-                      Stock Stalker is SEBI registered, India's most trusted stock research platform with the aim of helping you to prepare for a better future. With 8 years of successful experience in extensive market research and analysis, we have come up to help you in building a robust stock portfolio comprising centrally sound businesses which result in creating wealth for the long term. Join your hands with us, and let's create wealth together!
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quaerat reprehenderit enim doloribus, laudantium quia,
+                      repellendus quisquam molestiae sint quae iusto voluptates
+                      aliquid a eligendi eos aut consequatur optio quam eveniet!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum expedita, numquam esse, nulla quia blanditiis
+                      eaque ex repudiandae dolores incidunt enim quisquam ea!
+                      Velit, maiores hic unde consectetur praesentium cumque?
+                      Lorem ipsum dolor sit.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Recusandae numquam a quam quasi? Quisquam voluptatibus
+                      facere cum hic eum error sunt sequi nulla! Culpa veniam,
+                      quam totam inventore assumenda voluptatum! Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Consectetur
+                      aliquid, facilis culpa perspiciatis, nisi minima quidem
+                      sapiente suscipit laudantium magni, unde odit natus ex
+                      temporibus debitis nostrum. Nostrum, nam cum.
                     </p>
                   </div>
                 </div>
@@ -93,44 +327,327 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <div
-              class="
-                about-content-box about-content-image
-                wow
-                animated
-                fadeInRight
-              "
-            >
-              <img src="img/about_us.jpg" alt="stocks" />
+            <div class="about-content-box">
+              <div class="about-content-box-outer">
+                <div class="about-content-box-inner">
+                  <div
+                    class="content-img wow animated fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay="0s"
+                  >
+                    <img src="img/about.jpg" alt="About Stock Stalkers" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="quote">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="quote">
-                <div class="quote-message wow animated fadeInDown" data-wow-duration="1s"
-                data-wow-delay="0s">
-                  <p>
-                    I made my first investment at age eleven. I was wasting my life
-                    until then.
-                  </p>
-                </div>
-                <div class="quote-author wow animated fadeInRight" data-wow-duration="1s"
-                data-wow-delay="0s">
-                  <p>
-                    <strong>- Warren Buffet</strong>
-                  </p>
+    <!-- Team -->
+    <section id="team">
+      <div id="team-cover" class="bg-parallax">
+        <div class="team-content-box">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="about-content-box">
+                  <div class="about-content-box-outer">
+                    <div class="about-content-box-inner">
+                      <div
+                        class="content-title wow animated fadeInDown"
+                        data-wow-duration="1s"
+                        data-wow-delay="0s"
+                      >
+                        <h3>Our Team</h3>
+                      </div>
+
+                      <div
+                        class="about-descp wow animated fadeInLeft"
+                        data-wow-duration="1s"
+                        data-wow-delay="0s"
+                      >
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur culpa
+                          adipisicing elit. Recusandae numquam a quam quasi?
+                          Quisquam voluptatibus facere cum hic eum error sunt
+                          sequi nulla! Culpa veniam, quam totam inventore
+                          assumenda voluptatum!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="col-md-8">
+                <div class="team-content-box-outer">
+                  <div class="team-content-box-inner">
+                    <div class="col-md-12">
+                      <div class="team-members owl-carousel owl-theme">
+                        <div class="team-member">
+                          <div class="team-member-info text-center">
+                            <h4 class="team-member-name">Neeraj Sharma</h4>
+                            <h4 class="team-member-designation">CEO</h4>
+                            <ul class="social-list">
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-facebook"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-twitter"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-google-plus"></i
+                                ></a>
+                              </li>
+                            </ul>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Veniam eligendi illo dicta
+                              libero. Iure praesentium quaerat voluptatibus
+                              velit ad. Id ab commodi ipsum facilis illo
+                              repudiandae aliquam quam labore veritatis! Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit.
+                              Necessitatibus quasi minima repudiandae corrupti
+                              maxime id odio odit accusamus eaque numquam unde
+                              consectetur, repellendus recusandae pariatur quam
+                              quos soluta eos sequi. voluptatibus velit ad. Id
+                              ab commodi ipsum facilis illo repudiandae aliquam
+                              quam labore veritatis! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Necessitatibus quasi
+                              minima repudiandae corrupti maxime id odio odit
+                              accusamus eaque numquam unde consectetur,
+                              repellendus recusandae pariatur quam quos soluta
+                              eos sequi.
+                            </p>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Veniam eligendi illo dicta
+                              libero. Iure praesentium quaerat voluptatibus
+                              velit ad. Id ab commodi ipsum facilis illo
+                              repudiandae aliquam quam labore veritatis! Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit.
+                              Necessitatibus quasi minima repudiandae corrupti
+                              maxime id odio odit accusamus eaque numquam unde
+                              consectetur, repellendus recusandae pariatur quam
+                              quos soluta eos sequi. voluptatibus velit ad. Id
+                              ab commodi ipsum facilis illo repudiandae aliquam
+                              quam labore veritatis! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Necessitatibus quasi
+                              minima repudiandae corrupti maxime id odio odit
+                              accusamus eaque numquam unde consectetur,
+                              repellendus recusandae pariatur quam quos soluta
+                              eos sequi.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="team-member">
+                          <div class="team-member-info text-center">
+                            <h4 class="team-member-name">Dheeraj Sharma</h4>
+                            <h4 class="team-member-designation">Co-Founder</h4>
+                            <ul class="social-list">
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-facebook"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-twitter"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-google-plus"></i
+                                ></a>
+                              </li>
+                            </ul>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Veniam eligendi illo dicta
+                              libero. Iure praesentium quaerat voluptatibus
+                              velit ad. Id ab commodi ipsum facilis illo
+                              repudiandae aliquam quam labore veritatis! Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit.
+                              Necessitatibus quasi minima repudiandae corrupti
+                              maxime id odio odit accusamus eaque numquam unde
+                              consectetur, repellendus recusandae pariatur quam
+                              quos soluta eos sequi. voluptatibus velit ad. Id
+                              ab commodi ipsum facilis illo repudiandae aliquam
+                              quam labore veritatis! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Necessitatibus quasi
+                              minima repudiandae corrupti maxime id odio odit
+                              accusamus eaque numquam unde consectetur,
+                              repellendus recusandae pariatur quam quos soluta
+                              eos sequi.
+                            </p>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Veniam eligendi illo dicta
+                              libero. Iure praesentium quaerat voluptatibus
+                              velit ad. Id ab commodi ipsum facilis illo
+                              repudiandae aliquam quam labore veritatis! Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit.
+                              Necessitatibus quasi minima repudiandae corrupti
+                              maxime id odio odit accusamus eaque numquam unde
+                              consectetur, repellendus recusandae pariatur quam
+                              quos soluta eos sequi. voluptatibus velit ad. Id
+                              ab commodi ipsum facilis illo repudiandae aliquam
+                              quam labore veritatis! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Necessitatibus quasi
+                              minima repudiandae corrupti maxime id odio odit
+                              accusamus eaque numquam unde consectetur,
+                              repellendus recusandae pariatur quam quos soluta
+                              eos sequi.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="team-member">
+                          <div class="team-member-info text-center">
+                            <h4 class="team-member-name">Krishna Paluri</h4>
+                            <h4 class="team-member-designation">
+                              Sr.Developer
+                            </h4>
+                            <ul class="social-list">
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-facebook"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-twitter"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="#" class="social-icon icon-grey"
+                                  ><i class="fa fa-google-plus"></i
+                                ></a>
+                              </li>
+                            </ul>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Veniam eligendi illo dicta
+                              libero. Iure praesentium quaerat voluptatibus
+                              velit ad. Id ab commodi ipsum facilis illo
+                              repudiandae aliquam quam labore veritatis! Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit.
+                              Necessitatibus quasi minima repudiandae corrupti
+                              maxime id odio odit accusamus eaque numquam unde
+                              consectetur, repellendus recusandae pariatur quam
+                              quos soluta eos sequi. voluptatibus velit ad. Id
+                              ab commodi ipsum facilis illo repudiandae aliquam
+                              quam labore veritatis! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Necessitatibus quasi
+                              minima repudiandae corrupti maxime id odio odit
+                              accusamus eaque numquam unde consectetur,
+                              repellendus recusandae pariatur quam quos soluta
+                              eos sequi.
+                            </p>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Veniam eligendi illo dicta
+                              libero. Iure praesentium quaerat voluptatibus
+                              velit ad. Id ab commodi ipsum facilis illo
+                              repudiandae aliquam quam labore veritatis! Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit.
+                              Necessitatibus quasi minima repudiandae corrupti
+                              maxime id odio odit accusamus eaque numquam unde
+                              consectetur, repellendus recusandae pariatur quam
+                              quos soluta eos sequi. voluptatibus velit ad. Id
+                              ab commodi ipsum facilis illo repudiandae aliquam
+                              quam labore veritatis! Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Necessitatibus quasi
+                              minima repudiandae corrupti maxime id odio odit
+                              accusamus eaque numquam unde consectetur,
+                              repellendus recusandae pariatur quam quos soluta
+                              eos sequi.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
     </section>
 
+    <!-- Why Us-->
+    <section id="why_us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="about-content-box">
+              <div class="about-content-box-outer">
+                <div class="about-content-box-inner">
+                  <div
+                    class="content-title wow animated fadeInDown"
+                    data-wow-duration="1s"
+                    data-wow-delay="0s"
+                  >
+                    <h3>Why Us</h3>
+                  </div>
+
+                  <div
+                    class="about-descp wow animated fadeInLeft"
+                    data-wow-duration="1s"
+                    data-wow-delay="0s"
+                  >
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quaerat reprehenderit enim doloribus, laudantium quia,
+                      repellendus quisquam molestiae sint quae iusto voluptates
+                      aliquid a eligendi eos aut consequatur optio quam eveniet!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatum expedita, numquam esse, nulla quia blanditiis
+                      eaque ex repudiandae dolores incidunt enim quisquam ea!
+                      Velit, maiores hic unde consectetur praesentium cumque?
+                      Lorem ipsum dolor sit.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Recusandae numquam a quam quasi? Quisquam voluptatibus
+                      facere cum hic eum error sunt sequi nulla! Culpa veniam,
+                      quam totam inventore assumenda voluptatum! Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Consectetur
+                      aliquid, facilis culpa perspiciatis, nisi minima quidem
+                      sapiente suscipit laudantium magni, unde odit natus ex
+                      temporibus debitis nostrum. Nostrum, nam cum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="about-content-box">
+              <div class="about-content-box-outer">
+                <div class="about-content-box-inner">
+                  <div
+                    class="content-img wow animated fadeInRight"
+                    data-wow-duration="1s"
+                    data-wow-delay="0s"
+                  >
+                    <img src="img/why_us.jpg" alt="Why Stock Stalkers" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
     <section id="testimonials">
       <div id="testimonials-cover" class="bg-parallax">
         <div class="content-box">
@@ -140,7 +657,6 @@
             data-wow-delay="0s"
           >
             <h3>What our customer say</h3>
-            <div class="content-title-underline"></div>
           </div>
 
           <div
@@ -156,19 +672,31 @@
                 >
                   <div class="testimonial">
                     <blockquote class="text-center">
-                      It has been 2 years since I have been with the Stock Stalker and I am very impressed with their work. My favorite part of their work is their single-minded abilities of research and stock picking. Their analysis is very accurate. Despite my being here in Mumbai, the team of Stock Stalker interacts with me on a daily basis and their communication skills are really good. Hope to have future collaborations with you, a well-done team!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero eaque numquam sint nesciunt autem ex nulla
+                      laudantium nam, cupiditate mollitia dolor at, suscipit ea,
+                      sequi officia quod dicta quibusdam. Ut.
                     </blockquote>
+                    <div class="testimonial-authors">
+                      <p>
+                        <strong>Arvind Tripati</strong>
+                        <span>CEO & Founder - M&M Steel</span>
+                      </p>
+                    </div>
                   </div>
                   <div class="testimonial">
                     <blockquote class="text-center">
-                      As a client, I have been using the services of Stock Stalker for the last 1 year, and they are really amazing in their working skills. The team is very knowledgeable and very accurate in their work. I love the way they maintain portfolios that are neither too expanded nor too straight. By seeing their work, I really want to double my investment in trusting them. Good job guys!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Est placeat minus vitae, reiciendis iure corrupti quaerat
+                      quae ad nesciunt magnam et quasi modi repellendus
+                      similique consequatur neque quo deserunt! Blanditiis.
                     </blockquote>
-                    <!-- <div class="testimonial-authors">
+                    <div class="testimonial-authors">
                       <p>
-                        <strong>Srinivas</strong>
-                        <span>CEO & Founder</span>
+                        <strong>Adi Kolluri</strong>
+                        <span>Stock Investor</span>
                       </p>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -178,45 +706,64 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <div id="contact">
+      <!-- <div id="contact">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div id="contact-left">
-                <h3>StockStalker</h3>
+                <h3>VESCO</h3>
                 <p>
-                  Stock Stalker is a leading share market advisors company that is helping India to build a wealthier future. They are dedicated to giving you accurate stock picks on a daily basis through which you can earn huge profits.
+                  We believe in <strong>Simple</strong>,<strong>Clean</strong> &
+                  <strong>Modern</strong> Design Standards with Responsive
+                  Approach. Browse the amazing work of our company.
                 </p>
 
                 <div id="contact-info">
                   <address>
                     <strong>Headquaters:</strong>
-                    <p>Plot 5/7, 121 FT Goushala Road<br>
-                    Dharm Colony, Opp. Spanish Court<br>
-                    Palam Vihar, Gurgaon 122017
+                    <p>
+                      221 Jockey Hollow, Suite 600<br />
+                      Smithtown, NY 11787
                     </p>
                   </address>
                   <div id="phone-fax-email">
                     <p>
-                      <strong>Phone:</strong><span> +91-7982808318</span>
-                      <br />
-                      <strong>Email:</strong>
-                      <span>neeraj.indoriya60@gmail.com</span>
+                      <strong>Phone:</strong><span>(91) 8974 56984</span> <br />
+                      <strong>Fax:</strong><span>(91) 66 8754 8978</span> <br />
+                      <strong>Email:</strong> <span>info@vesco.com</span>
                     </p>
                   </div>
                 </div>
+                <ul class="social-list">
+                  <li>
+                    <a href="#" class="social-icon icon-white"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-icon icon-white"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-icon icon-white"
+                      ><i class="fa fa-youtube-play"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-icon icon-white"
+                      ><i class="fa fa-google-plus"></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="col-md-6">
               <div id="contact-right">
                 <h3>Contact Us</h3>
-                <form
-                  action="mail.php"
-                  method="post"
-                  onsubmit="return formvalidation()"
-                  name="ContactUsForm"
-                >
+                <form action="#">
                   <input
                     type="text"
                     name="fullname"
@@ -236,22 +783,12 @@
                     class="form-control"
                   ></textarea>
 
-                  <input
-                    class="btn btn-lg btn-general btn-white"
-                    type="submit"
-                    value="Submit"
-                  />
+                  <div id="send-btn">
+                    <a class="btn btn-lg btn-general btn-white" href="#"
+                      >SEND</a
+                    >
+                  </div>
                 </form>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div id="contact-center">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112173.183293378!2d77.13894530360844!3d28.527334237468406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1631765019778!5m2!1sen!2sus"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                ></iframe>
               </div>
             </div>
           </div>
@@ -263,50 +800,66 @@
           <div class="row">
             <div class="col-md-6">
               <div id="footer-copyrights">
-                <p>Copyrights &copy; 2021. Developed by <a href="https://krishnamohan.netlify.app/">krishnamohan Paluri</a>.</p>
+                <p>Copyrights &copy; 2017. Developed by Nishanth Namana.</p>
               </div>
             </div>
             <div class="col-md-6">
               <div id="footer-menu" class="hidden-sm hidden-xs">
                 <ul>
                   <li><a class="smooth-scroll" href="#home">Home</a>/</li>
-                  <li><a class="smooth-scroll" href="#about">About</a>/</li>
+                  <li>
+                    <a class="smooth-scroll" href="#services">Services</a>/
+                  </li>
+                  <li><a class="smooth-scroll" href="#work">Work</a>/</li>
+                  <li><a class="smooth-scroll" href="#team">Team</a>/</li>
                   <li>
                     <a class="smooth-scroll" href="#testimonials"
                       >Testimonials</a
                     >/
                   </li>
+                  <li><a class="smooth-scroll" href="#pricing">Pricing</a>/</li>
+                  <li><a class="smooth-scroll" href="#stats">Stats</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <a
         href="#home"
-        class="back-to-top btn btn-sm btn-orange btn-back-to-top smooth-scroll"
+        id="back-to-top"
+        class="btn btn-sm btn-blue btn-back-to-top smooth-scroll"
         title="home"
         role="button"
         ><i class="fa fa-angle-up"></i
       ></a>
     </footer>
+    -->
 
+    <!-- Linking jQuery file-->
     <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
 
+    <!-- WOW plugin for animation on scrolling-->
     <script src="js/wow/wow.min.js"></script>
 
+    <!-- Magnific Popup JS-->
     <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+    <!-- Owl-Carousel JS -->
     <script src="js/owl-carousel/owl.carousel.min.js"></script>
 
+    <!-- Counter jQuery files-->
     <script src="js/counter/jquery.waypoints.min.js"></script>
     <script src="js/counter/jquery.counterup.min.js"></script>
 
+    <!-- Easing plug-in for better animation-->
     <script src="js/easing/jquery.easing.1.3.js"></script>
 
+    <!-- Linking JavaScript file-->
     <script src="js/custom.js"></script>
   </body>
 </html>

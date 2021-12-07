@@ -1,15 +1,33 @@
-/*=====================================================
+/*===================================================== 
                 DEFAULT VALUES:
-
-    Font Family       : Urbanist, sans-serif;
+            
+    Font Family       : Roboto Condensed
 
     Greenish Blue     : #FF6347 (Buttons, Icons, Links, Lines and Background )
     Steel Grey        : #41464b (Headings)
     Blue Bayoux       : #64707b (Paragraphs)
     White             : #fff    (Text with black background)
-    Black             : #000
+    Black             : #000    
+        
 
+=====================================================*/
 
+/*=====================================================
+
+---- Colors for Bootstrap Grid System Examples ----
+
+.col-1{
+    background-color: red;
+}
+.col-2{
+    background-color: green;
+}
+.col-3{
+    background-color: yellow;
+}
+.col-4{
+    background-color: blue;
+}
 =====================================================*/
 
 /*=====================================================
@@ -17,7 +35,8 @@
 =====================================================*/
 
 body {
-  font-family: "Urbanist", sans-serif;
+  /* font-family: "Roboto Condensed", sans-serif; */
+  font-family: "Cabin", sans-serif;
 }
 
 html,
@@ -32,68 +51,83 @@ h3 {
 
 p {
   color: #64707b;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
-}
-
-/*=====================================================
-    ---- HEADER ----
-=====================================================*/
-header {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  z-index: 10000;
-  width: 100%;
-}
-
-.header-title {
-  text-align: center;
-}
-
-.header-title a {
-  color: #fff;
-  font-size: 50px;
-  margin: 0;
-  text-decoration: none;
+  text-align: justify;
 }
 
 /*=====================================================
     ---- HOME ----
 =====================================================*/
 
-.item img {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
+#home {
+  height: 100%;
 }
 
-#home-carousel {
-  position: relative;
+#home-cover {
+  height: 100%;
+  background-image: url("../img/stocks.jpg");
+  opacity: 0.4;
 }
 
-.owl-dots {
-  position: absolute;
-  bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+#home-content-box {
+  height: 100%;
+  width: 100%;
+  display: table;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#home-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home-heading h3 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+  text-transform: capitalize;
+}
+
+#home-heading h4 {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
 }
 
 /*=====================================================
-    ---- About Us ----
+    ---- PARALLAX EFFECT ----
 =====================================================*/
 
-.about-content-box img {
-  width: 100%;
-  border-radius: 15px;
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.about-content-image {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+/*=====================================================
+    ---- ANIMATION EFFECT ----
+=====================================================*/
+
+#home-cover,
+#home-heading,
+#home-bt {
+  animation-duration: 0.5s;
+}
+
+#home-cover {
+  animation-delay: 0.1s;
+}
+
+#home-heading {
+  animation-delay: 0.5s;
+}
+
+#home-btn {
+  animation-delay: 1s;
 }
 
 /*=====================================================
@@ -114,21 +148,21 @@ header {
   color: #fff;
 }
 
-.btn-orange {
-  border-color: #ff6347;
-  color: #ff6347;
-}
-
-.btn-orange:hover,
-.btn-orange:focus {
-  background: #ff6347;
-  color: #fff;
-}
-
 .btn-white:hover,
 .btn-white:focus {
   background: #fff;
   color: #41464b;
+}
+
+.btn-blue {
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background: #ff6347;
+  color: #fff;
 }
 
 .btn-back-to-top {
@@ -150,20 +184,67 @@ header {
 }
 
 .content-title h3 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 300;
   text-align: center;
   margin: 0 0 30px 0;
 }
 
-.content-title span {
-  text-decoration: underline;
+.content-title-underline {
+  width: 30px;
+  height: 3px;
+  background: #ff6347;
+  margin: 0 auto 30px auto;
+}
+
+/*=====================================================
+    ---- SERVICES ----
+=====================================================*/
+
+.service-item {
+  padding: 20px 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.service-item-icon i {
   color: #ff6347;
+  float: left;
+  padding: 15px;
+  margin-right: 25px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+  background: #ff6347;
+  color: #fff;
+}
+
+.service-item-title h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.service-item-descp p {
+  margin: 0;
+  padding-left: 85px;
 }
 
 /*=====================================================
     ---- ABOUT ----
 =====================================================*/
+
+#about-bg-diagonal {
+  width: 60%;
+  height: 700px;
+  float: right;
+  background-image: url(..//img/bg-about.jpg);
+  border-left: 200px solid #fff;
+  border-top: 700px solid transparent;
+}
 
 .about-content-box {
   float: left;
@@ -185,8 +266,14 @@ header {
   text-align: left;
 }
 
-.about .content-title .content-title-underline {
+.about .content-title img .about .content-title .content-title-underline {
   margin: 0 0 30px 0;
+}
+
+#about .content-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #about .content-title h3 {
@@ -207,28 +294,136 @@ header {
 }
 
 /*=====================================================
-    ---- Quote ----
+    ---- WORK ----
 =====================================================*/
-#quote {
-  background-color: #41464b;
+
+.row.no-gutter [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.quote {
-  padding: 100px 0;
+.img-wrapper {
+  overflow: hidden;
 }
 
-.quote-message p {
+.img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+/*=====================================================
+    ---- Why US ----
+=====================================================*/
+#why_us .content-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=====================================================
+    ---- TEAM MEMBERS ----
+=====================================================*/
+#team-cover {
+  background-image: url("..//img/stocks.jpg");
   color: #fff;
-  font-family: Georgia, sans-serif;
-  text-transform: initial;
+}
+
+#team .about-descp p {
+  color: #fff;
+  font-size: 18px;
+}
+
+#team .team-content-box-outer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#team .team-content-box-inner {
+  height: 650px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+#team .team-content-box-inner .team-members {
+  vertical-align: middle;
+}
+
+#team .content-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.team-content-box {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#team .content-title h3 {
+  color: #fff;
+}
+
+.team-member {
+  margin: 0 15px;
+}
+
+.team-member-info {
+  padding: 25px;
+}
+
+h4.team-member-name {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding-top: 2px;
+  color: #41464b;
+}
+
+h4.team-member-designation {
+  font-weight: 700;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
   font-style: italic;
-  text-align: center;
-  font-size: 35px;
+  letter-spacing: 1px;
+  margin-top: 5px;
 }
 
-.quote-author p {
+/*=====================================================
+    ---- SOCIAL ICONS ----
+=====================================================*/
+
+.social-list {
+  padding-left: 0;
+}
+
+.social-list li {
+  list-style: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  margin-right: 6px;
+}
+
+.social-icon i {
+  font-size: 17px;
+}
+
+.icon-grey i {
+  color: #64707b;
+}
+
+.social-icon i:hover {
+  color: #ff6347;
+}
+
+.icon-white i {
   color: #fff;
-  text-align: right;
 }
 
 /*=====================================================
@@ -236,11 +431,16 @@ header {
 =====================================================*/
 
 .content-title-white h3 {
+  color: #fff;
   padding-top: 20px;
 }
 
 #testimonials-cover {
   background-image: url("..//img/bg-testimonials.jpg");
+}
+
+#testimonials .content-box {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #customers-testimonials {
@@ -261,6 +461,7 @@ header {
   padding-bottom: 6px;
   padding-left: 150px;
   padding-right: 150px;
+  color: #fff;
   position: relative;
 }
 
@@ -286,12 +487,121 @@ header {
 }
 
 .testimonial-authors p {
+  color: #fff;
   font-size: 17px;
+  text-align: center;
 }
 
 .testimonial-authors p strong {
   display: block;
   letter-spacing: 1px;
+}
+
+/*=====================================================
+    ---- PRICING ----
+=====================================================*/
+
+.pricing-box {
+  border: 3px solid #ff6347;
+  padding: 50px 0;
+  margin: 40px 0;
+}
+
+h4.pricing-title {
+  background-color: #ff6347;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+h3.pricing-value {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h3.pricing-value sup {
+  font-size: 28px;
+  font-weight: normal;
+  vertical-align: super;
+}
+
+.pricing-spec {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0 60px 0;
+}
+
+ul.pricing-spec li p {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.pricing-box-lg {
+  padding: 90px 0;
+  margin: 0;
+  background-color: #ff6347;
+}
+
+.pricing-box-lg h4.pricing-title {
+  color: #ff6347;
+  background-color: #fff;
+}
+
+.pricing-box-lg ul.pricing-spec li p {
+  color: #fff;
+}
+
+/*=====================================================
+    ---- STATS ----
+=====================================================*/
+
+#stats-cover {
+  background-image: url(../img/bg-stats.jpg);
+}
+
+#stats-cover .content-box {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.stats-item {
+  padding: 100px 0;
+}
+
+.stats-item i {
+  color: #ff6347;
+  font-size: 5em;
+}
+
+.stats-item h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+.stats-item p {
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/*=====================================================
+    ---- Clients ----
+=====================================================*/
+
+.client {
+  padding: 40px 0;
+  width: 100%;
+}
+
+#clients .content-box {
+  padding: 60px 0 60px 0;
 }
 
 /*=====================================================
@@ -321,6 +631,12 @@ footer {
   font-size: 17px;
 }
 
+#contact-info {
+  background-image: url(..//img/world-map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 address {
   color: #fff;
 }
@@ -339,12 +655,6 @@ form .form-control {
   padding: 8px 16px;
   margin-bottom: 20px;
   color: #fff;
-}
-
-#contact-center iframe {
-  width: 100%;
-  height: 400px;
-  padding-top: 40px;
 }
 
 /*=====================================================
@@ -388,5 +698,62 @@ form .form-control {
 }
 
 #footer-menu a:hover {
+  color: #ff6347;
+}
+
+/*=====================================================
+    ---- Navigational Bar ----
+=====================================================*/
+
+.navbar {
+  padding: 20px 0;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.vesco-top-nav {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 7px 0;
+}
+
+.vesco-nav-wrapper {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-nav > li > a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background: none;
+  color: #ff6347;
+}
+
+.navbar-toggle {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.vesco-top-nav ul.navbar-nav li.active a {
   color: #ff6347;
 }
